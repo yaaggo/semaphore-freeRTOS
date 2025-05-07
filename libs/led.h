@@ -13,5 +13,6 @@
 
 void led_init(uint8_t pin);
 void led_intensity(uint8_t pin, uint8_t intensity);
+void led_clear();
 
 #endif

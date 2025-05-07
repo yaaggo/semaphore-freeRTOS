@@ -26,3 +26,9 @@ void led_intensity(uint8_t pin, uint8_t intensity) {
 
     pwm_set_enabled(slice_num, true);
 }
+
+void led_clear() {
+    led_intensity(LED_BLUE_PIN, 0);
+    led_intensity(LED_RED_PIN, 0);
+    led_intensity(LED_GREEN_PIN, 0);
+}
